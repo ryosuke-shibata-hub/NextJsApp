@@ -1,0 +1,16 @@
+version: '3'
+#バージョン指定
+services:
+  nextapp:
+  #コマンドを打つときに使う名前
+    build: ./
+    command: sh -c "npm run dev"
+    container_name: 'nextapp'
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app
+    stdin_open: true
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
