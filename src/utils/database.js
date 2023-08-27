@@ -10,14 +10,4 @@ const connectDB = async() => {
     }
 }
 
-// const Schema = mongoose.Schema
-// const ItemSchema = new Schema({
-//     title: String,
-//     image: String,
-//     price: String,
-//     description: String,
-//     email: String,
-// })
-
 export default connectDB
-// export const ItemModel = mongoose.models.Item || mongoose.model("Item", ItemSchema)

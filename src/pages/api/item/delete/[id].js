@@ -1,5 +1,5 @@
 import connectDB from "../../../../utils/database";
-import { Item, ItemModel } from "../../../../utils/schemaModels";
+import { ItemModel } from "../../../../utils/schemaModels";
 
 const deleteItem = async (req, res) => {
     try {
