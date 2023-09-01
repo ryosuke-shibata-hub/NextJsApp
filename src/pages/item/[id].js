@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 const ReadSingleItem = (props) => {
@@ -11,6 +12,10 @@ const ReadSingleItem = (props) => {
                 <h2>¥{props.singleItem.price}</h2>
                 <hr/>
                 <p>{props.singleItem.description}</p>
+                <div>
+                    <Link href={`/item/update/${props.singleItem._id}`} legacyBehavior><a>アイテム編集</a></Link>
+                    <Link href={`/item/delete/${props.singleItem._id}`} legacyBehavior><a>アイテム削除</a></Link>
+                </div>
             </div>
         </div>
     )
